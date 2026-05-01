@@ -1,6 +1,6 @@
 # time1
 
-QNX Neutrino example of a message-passing server and client pair.
+QNX Neutrino example of a message-passing server and client pair. What full video [here](https://youtu.be/Sr75ilk1UN4).
 
 - **`time1`** — [server](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.getting_started/topic/examples.html) that receives periodic 1 Hz timer pulses and blocking
   messages from clients, demonstrating `MsgReceive`/`MsgReply` with
