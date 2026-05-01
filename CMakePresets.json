@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "qnx-x86_64-release",
+      "displayName": "QNX x86_64 Release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "toolchainFile": "${sourceDir}/cmake/toolchain-qnx-x86_64.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "qnx-x86_64-debug",
+      "displayName": "QNX x86_64 Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-debug",
+      "toolchainFile": "${sourceDir}/cmake/toolchain-qnx-x86_64.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "qnx-x86_64-release",
+      "configurePreset": "qnx-x86_64-release"
+    },
+    {
+      "name": "qnx-x86_64-debug",
+      "configurePreset": "qnx-x86_64-debug"
+    }
+  ]
+}
