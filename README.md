@@ -269,7 +269,7 @@ Terminal 1:  time1.c:  received shutdown sentinel (42), terminating
 
 ## Generating a Parasoft BDF
 
-A Parasoft Build Data File (BDF) records every compiler invocation so that
+A [Parasoft](https://docs.parasoft.com/display/CPPTESTPROEC20252/Cross+Platform+Testing+Overview) Build Data File (BDF) records every compiler invocation so that
 Parasoft C/C++test can locate sources, headers, and flags without re-running
 the build itself.
 
